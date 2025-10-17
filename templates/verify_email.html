@@ -1,0 +1,7 @@
+<p>We sent a code to {{ email }}</p>
+<form method="POST">
+  {% csrf_token %}
+  <label>Enter OTP:</label>
+  <input type="text" name="otp" maxlength="6" required>
+  <button type="submit">Verify</button>
+</form>
